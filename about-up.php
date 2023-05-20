@@ -268,7 +268,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Bisrat Derbe</h5>
                             <p class="card-text">ID: UU82401R</p>
-                            <p class="card-text">Email: BisratDerbe@gmail.com</p>
+                            <p class="card-text">Email: Bisratderibe123@gmail.com</p>
                         </div>
                     </div>
                 </div>

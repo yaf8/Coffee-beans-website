@@ -105,7 +105,7 @@ if (isset($_POST['submit']) && $submit != null) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add Product</title>
+    <title>Upload Product</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Bootstrap JavaScript -->
@@ -205,7 +205,7 @@ if (isset($_POST['submit']) && $submit != null) {
 <body>
 
     <div class="container fadein mt-3">
-        <h1>Add Product</h1>
+        <h1>Upload Product</h1>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Product Name:</label>
