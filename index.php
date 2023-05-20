@@ -18,13 +18,8 @@ require_once 'database/database.php';
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
+  <title>Home page</title>
   <style>
-    .dropdown-item:hover {
-      color: black;
-      background-color: #333;
-    }
-
     .nav-item:hover {
       color: whitesmoke;
     }
@@ -118,7 +113,6 @@ require_once 'database/database.php';
         </div>
       </li>
       <li class="nav-item"><a href="./category/all-coffee.php">All coffee</a></li>
-      <li class="nav-item"><a href="./contact-up.php">Contact us</a></li>
       <li class="nav-item"><a href="./about-up.php">About us</a></li>
     </ul>
   </nav>
@@ -130,7 +124,6 @@ require_once 'database/database.php';
       <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="3" aria-label="Slide 4"></button>
     </div>
 
     <!-- Inner -->
@@ -146,7 +139,7 @@ require_once 'database/database.php';
 
       <!-- Single item -->
       <div class="carousel-item ">
-        <img src="images/coffee_beans_ad_background_2.jpg" class="d-block w-100" alt="Sunset Over the City" />
+        <img src="images/coffee_beans_ad_background_4.jpg" class="d-block w-100" alt="Sunset Over the City" />
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

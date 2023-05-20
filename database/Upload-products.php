@@ -203,7 +203,6 @@ if (isset($_POST['submit']) && $submit != null) {
 </head>
 
 <body>
-
     <div class="container fadein mt-3">
         <h1>Upload Product</h1>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
@@ -256,6 +255,3 @@ if (isset($_POST['submit']) && $submit != null) {
 </body>
 
 </html>
-
-
-

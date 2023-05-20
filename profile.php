@@ -148,7 +148,6 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
             $woreda = $row['woreda'];
             $house_no = $row['house_no'];
             $payment_method = $row['payment_method'];
-
         } else {
             header('Location: ./');
         }
@@ -179,7 +178,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
             
             
             ";
-            return;
+        return;
         $conn->close();
         ?>
 
@@ -199,8 +198,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
     </div>
 
 
-        <!-- Footer -->
-        <footer class="text-center text-lg-start text-light">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-light">
         <div class="d-flex flex-column flex-lg-row justify-content-between">
             <!-- Section: Links  -->
             <section class="">

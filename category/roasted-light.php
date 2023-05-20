@@ -4,7 +4,6 @@ require_once '../database/database.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="icon" type="image/x-icon" href="../images/logo.jpg">
     <link href="../styles/fontawesome6/pro/css/all.css" rel="stylesheet" />
@@ -17,7 +16,7 @@ require_once '../database/database.php';
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Light roasted</title>
     <style>
         .dropdown-item:hover {
             color: black;
@@ -119,7 +118,6 @@ require_once '../database/database.php';
                 </div>
             </li>
             <li class="nav-item"><a href="./all-coffee.php">All coffee</a></li>
-            <li class="nav-item"><a href="../contact-up.php">Contact us</a></li>
             <li class="nav-item"><a href="../about-up.php">About us</a></li>
         </ul>
     </nav>
@@ -146,7 +144,7 @@ require_once '../database/database.php';
 
       <!-- Single item -->
       <div class="carousel-item ">
-        <img src="../images/coffee_beans_ad_background_2.jpg" class="d-block w-100" alt="Sunset Over the City" />
+        <img src="../images/coffee_beans_ad_background_4.jpg" class="d-block w-100" alt="Sunset Over the City" />
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>About us</title>
     <script src="js/lottie.min.js"></script>
     <style>
         .dropdown-item:hover {
@@ -134,7 +134,6 @@
                 </div>
             </li>
             <li class="nav-item"><a href="./category/all-coffee.php">All coffee</a></li>
-            <li class="nav-item"><a href="./contact-up.php">Contact us</a></li>
             <li class="nav-item"><a href="#">About us</a></li>
         </ul>
     </nav>

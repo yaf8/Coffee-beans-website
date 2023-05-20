@@ -17,12 +17,13 @@ require_once '../database/database.php';
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Dark roasted</title>
     <style>
         .dropdown-item:hover {
             color: black;
             background-color: #333;
         }
+
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -38,6 +39,7 @@ require_once '../database/database.php';
             margin-top: auto;
             margin-left: auto;
         }
+
         body {
             background: linear-gradient(to bottom, #e8d2be, #6F4E37);
         }
@@ -117,62 +119,61 @@ require_once '../database/database.php';
                 </div>
             </li>
             <li class="nav-item"><a href="./all-coffee.php">All coffee</a></li>
-            <li class="nav-item"><a href="../contact-up.php">Contact us</a></li>
             <li class="nav-item"><a href="../about-up.php">About us</a></li>
         </ul>
     </nav>
 
-  <!-- Carousel wrapper -->
-  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    <!-- Carousel wrapper -->
+    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner " style="height: 20%; max-width: 70%; margin: auto; margin-top: 20px;">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <img src="../images/coffee_bean_ad_background_1.jpg" class="d-block w-100" alt="Sunset Over the City" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item ">
+                <img src="../images/coffee_beans_ad_background_4.jpg" class="d-block w-100" alt="Sunset Over the City" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+                <img src="../images/coffee_beans_ad_background_3.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-
-    <!-- Inner -->
-    <div class="carousel-inner " style="height: 20%; max-width: 70%; margin: auto; margin-top: 20px;">
-      <!-- Single item -->
-      <div class="carousel-item active">
-        <img src="../images/coffee_bean_ad_background_1.jpg" class="d-block w-100" alt="Sunset Over the City" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-
-      <!-- Single item -->
-      <div class="carousel-item ">
-        <img src="../images/coffee_beans_ad_background_2.jpg" class="d-block w-100" alt="Sunset Over the City" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img src="../images/coffee_beans_ad_background_3.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Inner -->
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Carousel wrapper -->
+    <!-- Carousel wrapper -->
 
 
 
