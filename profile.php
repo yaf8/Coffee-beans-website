@@ -122,7 +122,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
         $servername = "localhost";
         $username = "root";
         $pass = "";
-        $dbname = "super_market";
+        $dbname = "coffee_beans";
 
         // Create connection
         $conn = new mysqli($servername, $username, $pass, $dbname);

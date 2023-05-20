@@ -67,7 +67,7 @@ if (isset($_POST['submit']) && $submit != null) {
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "super_market";
+        $dbname = "coffee_beans";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -215,14 +215,9 @@ if (isset($_POST['submit']) && $submit != null) {
                 <label for="category">Category:</label>
                 <select class="form-control" id="category" name="category" required>
                     <option value="" selected disabled>-- Select a category --</option>
-                    <option value="foods">Foods</option>
-                    <option value="beverages">Beverages</option>
-                    <option value="electronics">Electronics</option>
-                    <option value="furniture">Furniture</option>
-                    <option value="sanitary">Sanitary</option>
-                    <option value="Stationary">Stationary</option>
-                    <option value="beauty">Beauty</option>
-                    <option value="cloth">Cloth</option>
+                    <option value="roasted">Roasted</option>
+                    <option value="unroasted">Unroasted</option>
+                    <option value="ethiopian">Ethiopian</option>
 
                 </select>
             </div>
@@ -230,20 +225,11 @@ if (isset($_POST['submit']) && $submit != null) {
                 <label for="subcategory">Subcategory:</label>
                 <select class="form-control" id="subcategory" name="subcategory" required>
                     <option value="" selected disabled>-- Select a subcategory --</option>
-                    <option value="cultural">Cultural</option>
-                    <option value="modern">Modern</option>
-                    <option value="softdrink">Soft Drink</option>
-                    <option value="alcholic">Alcholic</option>
-                    <option value="laptop">Laptop</option>
-                    <option value="laptop">Phone</option>
-                    <option value="home">Home</option>
-                    <option value="office">Office</option>
-                    <option value="soap">Soap</option>
-                    <option value="detergents">Detergents</option>
-                    <option value="pen">Pen</option>
-                    <option value="pencil">Pencil</option>
-                    <option value="men">Men</option>
-                    <option value="women">Women</option>
+                    <option value="light_roast">Light Roasted</option>
+                    <option value="dark_roast">Dark Roasted</option>
+                    <option value="medium_roast">Medium Roasted</option>
+                    <option value="arabica">Arabica</option>
+                    <option value="robusta">Robusta</option>
                 </select>
             </div>
 

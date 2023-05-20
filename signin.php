@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
         $servername = "localhost";
         $username = "root";
         $pass = "";
-        $dbname = "super_market";
+        $dbname = "coffee_beans";
 
 
         // Create connection

@@ -28,9 +28,6 @@ require_once 'database/database.php';
     .nav-item:hover {
       color: whitesmoke;
     }
-
-
-
     .dorpdown-a {
       padding: 0px;
     }
@@ -78,15 +75,19 @@ require_once 'database/database.php';
       <li class="navig nav-item" data-bs-toggle="dropdown">
         <div class="dropdown">
           <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Foods</a>
+            Roasted</a>
           <ul type=" none" class="dropdown-menu btn-group-sm">
 
-            <a href="category/food-modern.php" class="dropdown-a" style="padding : 0px; color: white;">
-              <li class="dropdown-item"> Cultural </li>
+            <a href="category/roasted-light.php" class="dropdown-a" style="padding : 0px; color: white;">
+              <li class="dropdown-item"> Light </li>
             </a>
 
-            <a href="category/food-modern.php" class="dropdown-a" style="padding : 0px; color: white;">
-              <li class="dropdown-item"> Modern </li>
+            <a href="category/roasted-medium.php" class="dropdown-a" style="padding : 0px; color: white;">
+              <li class="dropdown-item"> Medium </li>
+            </a>
+
+            <a href="category/roasted-dark.php" class="dropdown-a" style="padding : 0px; color: white;">
+              <li class="dropdown-item"> Dark </li>
             </a>
           </ul>
         </div>
@@ -94,80 +95,20 @@ require_once 'database/database.php';
       <li class="nav-item" data-bs-toggle="dropdown">
         <div class="dropdown">
           <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Beverages</a>
+            Unroasted</a>
           <ul type=" none" class="dropdown-menu btn-group-sm">
-            <a href="" class="dropdown-a" style="padding : 0px; color: white;">
-              <li class="dropdown-item"> Soft drink </li>
+            <a href="./category/unroasted-arabica.php" class="dropdown-a" style="padding : 0px; color: white;">
+              <li class="dropdown-item"> Arabica </li>
             </a>
-            <li class="dropdown-item">Alcholic</li>
+            <a href="./category/unroasted-robusta.php" class="dropdown-a" style="padding : 0px; color: white;">
+              <li class="dropdown-item"> Rebusta </li>
+            </a>
           </ul>
         </div>
       </li>
-      <li class="nav-item" data-bs-toggle="dropdown">
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Electronic</a>
-          <ul type=" none" class="dropdown-menu btn-group-sm">
-            <li class="dropdown-item">Laptop</li>
-            <li class="dropdown-item">Cellphone</li>
-            <li class="dropdown-item">Watch</li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item" data-bs-toggle="dropdown">
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Furniture</a>
-          <ul type=" none" class="dropdown-menu btn-group-sm">
-            <li class="dropdown-item">Sofa</li>
-            <li class="dropdown-item">Table</li>
-          </ul>
-        </div>
-      </li>
-      </li>
-      <li class="nav-item" data-bs-toggle="dropdown">
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Sanitary</a>
-          <ul type=" none" class="dropdown-menu btn-group-sm">
-            <li class="dropdown-item">Soap</li>
-            <li class="dropdown-item">Detergent</li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item" data-bs-toggle="dropdown">
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Stationary</a>
-          <ul type=" none" class="dropdown-menu btn-group-sm">
-            <li class="dropdown-item">Pen</li>
-            <li class="dropdown-item">Pencil</li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item" data-bs-toggle="dropdown">
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Beauty</a>
-          <ul type=" none" class="dropdown-menu btn-group-sm">
-            <li class="dropdown-item">Men</li>
-            <li class="dropdown-item">Women</li>
-          </ul>
-        </div>
-      <li class="nav-item" data-bs-toggle="dropdown">
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
-            Cloth</a>
-          <ul type=" none" class="dropdown-menu btn-group-sm">
-            <li class="dropdown-item">Cultural</li>
-            <li class="dropdown-item">Modern</li>
-          </ul>
-        </div>
-      </li>
-
-
-      <li class="nav-item"><a href="#">Contact us</a></li>
-      <li class="nav-item"><a href="#">About us</a></li>
+      <li class="nav-item"><a href="./category/all-coffee.php">All coffee</a></li>
+      <li class="nav-item"><a href="./contact-up.php">Contact us</a></li>
+      <li class="nav-item"><a href="./about-up.php">About us</a></li>
     </ul>
   </nav>
 
@@ -227,7 +168,7 @@ require_once 'database/database.php';
 
   <div class=" justify-content-center container-fluid mt-4" style="width: 90%">
 
-    <h3 class="fw-bold w-100">
+  <h3 class="fw-bold w-100">
       Top product <i class="fa-solid fa-solid fa-arrow-right pl-4 pr-2"></i>
     </h3>
     <div class="row">
@@ -368,88 +309,211 @@ require_once 'database/database.php';
         </div>
       </div>
     </div>
+    <h3 class="fw-bold w-100 mt-5">
+       Discount <i class="fa-solid fa-solid fa-arrow-right pl-4 pr-2"></i>
+    </h3>
+    <div class="row">
+      <div class="col-16">
+        <div class="card-group">
+          <div class="card-scroll">
+
+            <!-- JavaScript and jQuery -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-Bk0IMm/n7mbudOk17svBG/9fcFh1KjV7wRtRlNt7rQrOVkxgTofZdwt3s9f+cJ1t" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-Q50VUEjvFlzkx7t5OBLZzkk40V6+0wr8X5W6wIZUjD0U6m+MxO7Ucr/hZJLlZzzg" crossorigin="anonymous"></script>
+
+            <?php
+
+
+            // prepare a statement to select all products
+            $stmt = $conn->prepare('SELECT * FROM product LIMIT 10');
+
+            // execute the statement and fetch all results into an array
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            // initialize the cart variable
+            if (!isset($_SESSION['cart'])) {
+              $_SESSION['cart'] = array();
+            }
+
+            // check if form is submitted
+            if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
+              // add the product to the cart
+              $productId = $_POST['product_id'];
+              $_SESSION['cart'][] = $productId;
+            }
+
+            // loop through the results and output the products from mysql
+            foreach ($results as $result) {
+              // create the product object
+              $product = new Product();
+              $product->setId($result['id']);
+              $product->setName($result['name']);
+              $product->setCategory($result['category']);
+              $product->setSubcategory($result['subcategory']);
+              $product->setDescription($result['description']);
+              $product->setPrice($result['price']);
+              $product->setImgUri($result['img_uri']);
+
+              $card =  "
+                    <div class='card hover-shadow hover-zoom'>
+                      <img src='images/" . $product->getImgUri() . "' class='card-img hover-overlay' alt='Product Image'>
+                      <div class='card-body'>
+                        <h5 class='card-title'>" . $product->getName() . "</h5>
+                        <p class='card-text'>" . $product->getDescription() . "</p>
+                        <div class='d-flex align-items-center justify-content-between'>
+                          <p class='card-subtitle'><span class='fw-bold'>ETB</span> <span class='h5 fw-bold'>" . $product->getPrice() . "</span></p>
+                          <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
+                            <input type='hidden' name='product_id' value='" . $product->getId() . "'>
+                            <button type='submit' onclick='incBadge()' class='btn btn-outline-success hover-shadow'><i class='fa-solid fa-cart-plus'></i></button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  ";
+
+
+              
+
+              echo $card;
+            }
+            
+            
+            // initialize the cart variable
+              if (!isset($_SESSION['cart'])) {
+                $_SESSION['cart'] = array();
+              }
+
+              // check if the form is submitted
+              if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                // get the product ID from the form
+                $productId = $_POST['product_id'];
+
+                // add the product to the cart session variable
+                $_SESSION['cart'][] = $productId;
+
+                // return the cart count as the response
+                echo count($_SESSION['cart']);
+                return;
+              }
+
+
+
+            // close the connection
+            $pdo = null;
+            ?>
+          
+
+            <script>
+
+              var badgeInc = 0;
+              function incBadge(){
+                badgeInc++;
+                document.getElementById("badge").innerHTML = badgeInc;
+              }
+
+
+              function addToCart(productId) {
+                // Send an AJAX request to add the product to the cart
+                $.ajax({
+                  type: "POST",
+                  url: "cart.php",
+                  data: {
+                    product_id: productId
+                  },
+                  success: function(response) {
+                    // Update the cart badge with the new cart count
+                    $("#badge").text(response);
+                    console.log(response);
+                  }
+                });
+              }
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
   </div>
 
 
 
 
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-light text-muted">
-    <div class="d-flex flex-column flex-lg-row justify-content-between">
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Family Supermarket
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> Addis Ababa, Gerji Unity university</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 251 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 251 234 567 89</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Section: Social media -->
-      <section class="p-4 border-top mt-auto">
-        <div class="d-flex justify-content-center justify-content-lg-end">
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-
     <!-- Footer -->
-    <div class="d-flex justify-content-between align-items-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
-      <div style="margin-left: 30px;">&copy; All rights reserved.</div>
-      <div> 2023 Family Supermarket</div>
-      <div style="margin-right: 30px;"><a href="#" style="color: darkslategrey;">Terms and Conditions</a></div>
-    </div>
+    <footer class="text-center text-lg-start bg-dark text-light">
+        <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Unity coffee beans
+                            </h6>
+                            <p>
+                                We are a wholesale roaster & unroasted coffee service based in Addis Ababa, Ethiopia.
+                                We value our relationship with growers across the globe.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Addis Ababa, Gerji Unity university</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 251 9293 442 95</p>
+                            <p><i class="fas fa-phone me-3"></i> + 251 7033 442 96</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Section: Social media -->
+            <section class="p-4 mt-auto">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <a href="" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/yaf8" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yaf8" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Footer -->
+        <div class="d-flex justify-content-between border-top align-items-center" style="background-color: rgba(0, 0, 0, 0.05);">
+            <div style="margin-left: 30px;">&copy; All rights reserved.</div>
+            <div> 2023 Family Supermarket</div>
+            <div style="margin-right: 30px;"><a href="#" class="text-light" style="color: darkslategrey;">Terms and Conditions</a></div>
+        </div>
+        <!-- Footer -->
+    </footer>
     <!-- Footer -->
-  </footer>
-  <!-- Footer -->
 
 </body>
 
