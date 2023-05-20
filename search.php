@@ -26,6 +26,7 @@ require_once 'database/database.php';
             color: black;
             background-color: #333;
         }
+
         .nav-item:hover {
             color: whitesmoke;
         }
@@ -37,6 +38,7 @@ require_once 'database/database.php';
         a .dropdown-item .dropdown-item {
             padding: 5px;
         }
+
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -46,10 +48,11 @@ require_once 'database/database.php';
         .card-img {
             object-fit: cover;
         }
+
         body {
-      background: linear-gradient(to bottom, #e8d2be, #6F4E37);
-      background-repeat: no-repeat;
-    }
+            background: linear-gradient(to bottom, #e8d2be, #6F4E37);
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 

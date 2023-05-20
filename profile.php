@@ -94,6 +94,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
             font-size: 1.2rem;
             color: #6c757d;
         }
+
     </style>
 </head>
 

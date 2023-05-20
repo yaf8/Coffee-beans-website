@@ -423,6 +423,134 @@ require_once 'database/database.php';
       </div>
     </div>
 
+    
+
+    <h3 class="fw-bold w-100 mt-5 text-light">
+      New arivals <i class="fa-solid fa-solid fa-arrow-right pl-4 pr-2"></i>
+    </h3>
+    <div class="row">
+      <div class="col-16">
+        <div class="card-group">
+          <div class="card-scroll">
+
+            <!-- JavaScript and jQuery -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-Bk0IMm/n7mbudOk17svBG/9fcFh1KjV7wRtRlNt7rQrOVkxgTofZdwt3s9f+cJ1t" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-Q50VUEjvFlzkx7t5OBLZzkk40V6+0wr8X5W6wIZUjD0U6m+MxO7Ucr/hZJLlZzzg" crossorigin="anonymous"></script>
+
+            <?php
+
+
+            // prepare a statement to select all products
+            $stmt = $conn->prepare('SELECT * FROM product ORDER BY id DESC LIMIT 10');
+
+            // execute the statement and fetch all results into an array
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            // initialize the cart variable
+            if (!isset($_SESSION['cart'])) {
+              $_SESSION['cart'] = array();
+            }
+
+            // check if form is submitted
+            if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
+              // add the product to the cart
+              $productId = $_POST['product_id'];
+              $_SESSION['cart'][] = $productId;
+            }
+
+            // loop through the results and output the products from mysql
+            foreach ($results as $result) {
+              // create the product object
+              $product = new Product();
+              $product->setId($result['id']);
+              $product->setName($result['name']);
+              $product->setCategory($result['category']);
+              $product->setSubcategory($result['subcategory']);
+              $product->setDescription($result['description']);
+              $product->setPrice($result['price']);
+              $product->setImgUri($result['img_uri']);
+
+              $card =  "
+                    <div class='card hover-shadow hover-zoom'>
+                      <img src='images/" . $product->getImgUri() . "' class='card-img hover-overlay' alt='Product Image'>
+                      <div class='card-body'>
+                        <h5 class='card-title'>" . $product->getName() . "</h5>
+                        <p class='card-text'>" . $product->getDescription() . "</p>
+                        <div class='d-flex align-items-center justify-content-between'>
+                          <p class='card-subtitle'><span class='fw-bold'>ETB</span> <span class='h5 fw-bold'>" . $product->getPrice() . "</span></p>
+                          <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
+                            <input type='hidden' name='product_id' value='" . $product->getId() . "'>
+                            <button type='submit' onclick='incBadge()' class='btn btn-outline-success hover-shadow'><i class='fa-solid fa-cart-plus'></i></button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  ";
+
+
+
+
+              echo $card;
+            }
+
+
+            // initialize the cart variable
+            if (!isset($_SESSION['cart'])) {
+              $_SESSION['cart'] = array();
+            }
+
+            // check if the form is submitted
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+              // get the product ID from the form
+              $productId = $_POST['product_id'];
+
+              // add the product to the cart session variable
+              $_SESSION['cart'][] = $productId;
+
+              // return the cart count as the response
+              echo count($_SESSION['cart']);
+              return;
+            }
+
+
+
+            // close the connection
+            $pdo = null;
+            ?>
+
+
+            <script>
+              var badgeInc = 0;
+
+              function incBadge() {
+                badgeInc++;
+                document.getElementById("badge").innerHTML = badgeInc;
+              }
+
+
+              function addToCart(productId) {
+                // Send an AJAX request to add the product to the cart
+                $.ajax({
+                  type: "POST",
+                  url: "cart.php",
+                  data: {
+                    product_id: productId
+                  },
+                  success: function(response) {
+                    // Update the cart badge with the new cart count
+                    $("#badge").text(response);
+                    console.log(response);
+                  }
+                });
+              }
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 
