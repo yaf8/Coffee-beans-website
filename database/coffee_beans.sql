@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 20, 2023 at 02:47 AM
+-- Generation Time: May 20, 2023 at 07:00 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -50,7 +50,8 @@ CREATE TABLE IF NOT EXISTS `customer` (
 INSERT INTO `customer` (`id`, `firstName`, `lastName`, `email`, `password`, `phone`, `gender`, `city`, `subcity`, `woreda`, `house_no`, `payment_method`) VALUES
 (1, 'Yafet', 'Feleke', 'yafetema15@gmail.com', '$2y$10$hZYPNqMjkTob.giYwseifeLN.K5tIvk/viA0fX8Dv75ren9XAiFf6', '+251929344295', 'male', 'Addis Ababa', 'Bole', 8, 'new', 'telebirr'),
 (14, 'Eyob', 'Feleke', 'eyobema18@gmail.com', '$2y$10$1X/ybFleFefjxtcZSDeJ9e1SGU6bviEMt2JzrWnvaOYf08BvmIfUO', '+251947901154', 'male', 'Addis Ababa', 'Leki kura', 3, 'new', 'cbe birr'),
-(22, 'Feven', 'Feleke', 'fevenabebe@gmail.com', '$2y$10$tKd146S45WFOQF5sQ/.KMO5ObOEaI0MS4CmopJ0kskeEIl4TIxD8q', '+251911001122', 'female', 'Addis Ababa', 'Nifas Silk-Lafto', 10, '419', 'visa card');
+(22, 'Feven', 'Feleke', 'fevenabebe@gmail.com', '$2y$10$tKd146S45WFOQF5sQ/.KMO5ObOEaI0MS4CmopJ0kskeEIl4TIxD8q', '+251911001122', 'female', 'Addis Ababa', 'Nifas Silk-Lafto', 10, '419', 'visa card'),
+(0, 'Ema', 'Tilahun', 'yafetyafet@gmail.com', '$2y$10$0o5U6q/mr8klQYC6osgeHuC.FEIl2wQv/MVwksOdv9yjYpcUe1Jpy', '0924112233', 'male', 'Addis Ababa', 'Bole', 2, 'new', 'master card');
 
 -- --------------------------------------------------------
 
@@ -83,10 +84,10 @@ CREATE TABLE IF NOT EXISTS `discount` (
 --
 
 INSERT INTO `discount` (`id`, `prod_id`) VALUES
-(1, 88),
-(2, 90),
+(1, 111),
+(2, 105),
 (3, 97),
-(4, 100),
+(4, 113),
 (5, 107),
 (6, 109),
 (9, 91),
@@ -100,8 +101,10 @@ INSERT INTO `discount` (`id`, `prod_id`) VALUES
 
 DROP TABLE IF EXISTS `new_arrivals`;
 CREATE TABLE IF NOT EXISTS `new_arrivals` (
-  `id` int NOT NULL,
-  PRIMARY KEY (`id`)
+  `id` int NOT NULL AUTO_INCREMENT,
+  `prod_id` int NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
