@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="js/lottie.min.js"></script>
     <style>
         .dropdown-item:hover {
             color: black;
@@ -40,11 +40,10 @@
 
         .card {
             width: 300px;
-            background: linear-gradient(
-                to bottom,
-                #fffbf0,
-                #fff8a8
-            );
+            height: 400px;
+            background: linear-gradient(to bottom,
+                    #fffbf0,
+                    #fff8a8);
         }
 
         .card-grid {
@@ -144,11 +143,52 @@
     <div class=" justify-content-center container-fluid mt-5" style="width: 90%">
         <div class="card-grid card-group">
 
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
+
+                        <div id="animation-container" class="card-img card-img-top rounded-circle"></div>
+
+
+                        <script>
+                            // Load the JSON animation file
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animation-container'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: './images/profile/profile-avator-animation.json'
+                            });
+                        </script>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Yafet Abebe</h5>
+                            <p class="card-text">ID: UU78211R</p>
+                            <p class="card-text">Email: yafetema15@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
+
+                        <div id="animation-container-2" class="card-img card-img-top rounded-circle"></div>
+
+
+                        <script>
+                            // Load the JSON animation file
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animation-container-2'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: './images/profile/profile-avator-animation-2.json'
+                            });
+                        </script>
+
                         <div class="card-body text-center">
                             <h5 class="card-title">Yafet Abebe</h5>
                             <p class="card-text">ID: UU78211R</p>
@@ -161,8 +201,8 @@
 
 
 
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -174,8 +214,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -187,8 +227,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -200,8 +240,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -213,8 +253,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -226,8 +266,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -239,8 +279,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -252,8 +292,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -265,8 +305,8 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
+
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
                         <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
@@ -286,77 +326,77 @@
     </div>
 
 
-    
-  <!-- Footer -->
-  <footer class="text-center text-lg-start text-light">
-    <div class="d-flex flex-column flex-lg-row justify-content-between">
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Unity coffee beans
-              </h6>
-              <p>
-                We are a wholesale roaster & unroasted coffee service based in Addis Ababa, Ethiopia.
-                We value our relationship with growers across the globe.
-              </p>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> Addis Ababa, Gerji Unity university</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 251 9293 442 95</p>
-              <p><i class="fas fa-phone me-3"></i> + 251 7033 442 96</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Section: Social media -->
-      <section class="p-4 mt-auto">
-        <div class="d-flex justify-content-center justify-content-lg-end">
-          <a href="" target="_blank" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="www.linkedin.com/in/yaf8" target="_blank" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/yaf8" target="_blank" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </section>
-      <!-- Section: Social media -->
-    </div>
 
     <!-- Footer -->
-    <div class="d-flex justify-content-between border-top align-items-center" style="background-color: rgba(0, 0, 0, 0.05);">
-      <div style="margin-left: 30px;">&copy; All rights reserved.</div>
-      <div> 2023 Unit coffee</div>
-      <div style="margin-right: 30px;"><a href="#" class="text-light" style="color: darkslategrey;">Terms and Conditions</a></div>
-    </div>
+    <footer class="text-center text-lg-start text-light">
+        <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Unity coffee beans
+                            </h6>
+                            <p>
+                                We are a wholesale roaster & unroasted coffee service based in Addis Ababa, Ethiopia.
+                                We value our relationship with growers across the globe.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Addis Ababa, Gerji Unity university</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 251 9293 442 95</p>
+                            <p><i class="fas fa-phone me-3"></i> + 251 7033 442 96</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Section: Social media -->
+            <section class="p-4 mt-auto">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <a href="" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/yaf8" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yaf8" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Footer -->
+        <div class="d-flex justify-content-between border-top align-items-center" style="background-color: rgba(0, 0, 0, 0.05);">
+            <div style="margin-left: 30px;">&copy; All rights reserved.</div>
+            <div> 2023 Unit coffee</div>
+            <div style="margin-right: 30px;"><a href="#" class="text-light" style="color: darkslategrey;">Terms and Conditions</a></div>
+        </div>
+        <!-- Footer -->
+    </footer>
     <!-- Footer -->
-  </footer>
-  <!-- Footer -->
 
 
 
