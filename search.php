@@ -2,6 +2,7 @@
 session_start();
 require_once 'models/Product.php';
 require_once 'database/database.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +37,24 @@ require_once 'database/database.php';
 
         a .dropdown-item .dropdown-item {
             padding: 5px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .footer {
+            margin-top: auto;
         }
     </style>
 </head>
@@ -114,7 +133,7 @@ require_once 'database/database.php';
         </ul>
     </nav>
 
-    <div class=" justify-content-center container-fluid mt-5" style="width: 90%">
+    <div class=" justify-content-center container-fluid mt-5 main-container" style="width: 90%">
         <div class="card-grid card-group">
 
             <h3 class="fw-bold w-100 mt-3">
@@ -271,7 +290,7 @@ require_once 'database/database.php';
         <!-- Footer -->
         <div class="d-flex justify-content-between border-top align-items-center" style="background-color: rgba(0, 0, 0, 0.05);">
             <div style="margin-left: 30px;">&copy; All rights reserved.</div>
-            <div> 2023 Family Supermarket</div>
+            <div> 2023 Unity coffee</div>
             <div style="margin-right: 30px;"><a href="#" class="text-light" style="color: darkslategrey;">Terms and Conditions</a></div>
         </div>
         <!-- Footer -->

@@ -3,12 +3,13 @@
   font-size: small;
 }
 
+
 header nav {
   font-size: medium;
 }
 
 nav {
-  background-color: #636363;
+  background-color: #6F4E37;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -107,6 +108,7 @@ a:hover {
   max-width: 280px;
   margin-right: 10px;
   transition: all 0.3;
+  background-color: #faecdf;
 }
 
 .card img{

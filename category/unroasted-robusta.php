@@ -24,6 +24,9 @@ require_once '../database/database.php';
             background-color: #333;
         }
 
+        body {
+            background: linear-gradient(to bottom, #e8d2be, #6F4E37);
+        }
 
         .card-grid {
             display: grid;
@@ -115,58 +118,57 @@ require_once '../database/database.php';
         </ul>
     </nav>
 
-    <!-- Carousel wrapper -->
-    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-
-        <!-- Inner -->
-        <div class="carousel-inner " style="height: 20%; max-width: 70%; margin: auto; margin-top: 20px;">
-            <!-- Single item -->
-            <div class="carousel-item active">
-                <img src="../images/foodsCrop.jpg" class="d-block w-100" alt="Sunset Over the City" />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-            </div>
-
-            <!-- Single item -->
-            <div class="carousel-item ">
-                <img src="../images/vegetablesCrop.jpg" class="d-block w-100" alt="Sunset Over the City" />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-            <!-- Single item -->
-            <div class="carousel-item">
-                <img src="../images/cosmetics-collection-4-crop.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Inner -->
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+  <!-- Carousel wrapper -->
+  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <!-- Carousel wrapper -->
+
+    <!-- Inner -->
+    <div class="carousel-inner " style="height: 20%; max-width: 70%; margin: auto; margin-top: 20px;">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="../images/coffee_bean_ad_background_1.jpg" class="d-block w-100" alt="Sunset Over the City" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item ">
+        <img src="../images/coffee_beans_ad_background_2.jpg" class="d-block w-100" alt="Sunset Over the City" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="../images/coffee_beans_ad_background_3.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->
 
 
 
@@ -287,7 +289,7 @@ require_once '../database/database.php';
         <!-- Footer -->
         <div class="d-flex justify-content-between border-top align-items-center" style="background-color: rgba(0, 0, 0, 0.05);">
             <div style="margin-left: 30px;">&copy; All rights reserved.</div>
-            <div> 2023 Family Supermarket</div>
+            <div> 2023 Unity coffee</div>
             <div style="margin-right: 30px;"><a href="#" class="text-light" style="color: darkslategrey;">Terms and Conditions</a></div>
         </div>
         <!-- Footer -->
