@@ -30,6 +30,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="js/script.js"></script>
     <script src="validForm.js"></script>
+    <script src="js/lottie.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -94,7 +95,6 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
             font-size: 1.2rem;
             color: #6c757d;
         }
-
     </style>
 </head>
 
@@ -157,7 +157,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
         
         <div class='profile-header'>
             <div class='profile-avatar'>
-                <img src='https://via.placeholder.com/150' alt='Avatar'>
+                <div id='profile-avator' alt='Avatar'></div>
             </div>
             <h1 class='profile-name'>$first_name  $last_name</h1>
         </div>
@@ -175,6 +175,17 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
             <h3>Payment Method</h3>
             <p><strong>Type:</strong> $payment_method</p>
         </div>
+
+        <script>
+        // Load the JSON animation file
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('profile-avator'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './images/profile/profile-avator-animation.json'
+        });
+    </script>
             
             
             
@@ -183,19 +194,9 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
         $conn->close();
         ?>
 
-        <div class="profile-info">
-            <h3>Personal Information</h3>
-            <p><strong>Email:</strong> yafet@example.com</p>
-            <p><strong>Phone:</strong> +251 911 22 33 44</p>
-            <p><strong>Gender:</strong> Male</p>
-            <h3>Address</h3>
-            <p><strong>City:</strong> Addis Ababa</p>
-            <p><strong>Subcity:</strong> Bole </p>
-            <p><strong>Wereda:</strong> 123</p>
-            <p><strong>House Number:</strong> new </p>
-            <h3>Payment Method</h3>
-            <p><strong>Type:</strong> Credit Card</p>
-        </div>
+       
+
+
     </div>
 
 
