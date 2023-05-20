@@ -197,6 +197,78 @@ if (isset($_GET['action']) && $_GET['action'] === 'signout') {
             <p><strong>Type:</strong> Credit Card</p>
         </div>
     </div>
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-light">
+        <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Unity coffee beans
+                            </h6>
+                            <p>
+                                We are a wholesale roaster & unroasted coffee service based in Addis Ababa, Ethiopia.
+                                We value our relationship with growers across the globe.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Addis Ababa, Gerji Unity university</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 251 9293 442 95</p>
+                            <p><i class="fas fa-phone me-3"></i> + 251 7033 442 96</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Section: Social media -->
+            <section class="p-4 mt-auto">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <a href="" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/yaf8" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yaf8" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Footer -->
+        <div class="d-flex justify-content-between border-top align-items-center" style="background-color: rgba(0, 0, 0, 0.05);">
+            <div style="margin-left: 30px;">&copy; All rights reserved.</div>
+            <div> 2023 Unit coffee</div>
+            <div style="margin-right: 30px;"><a href="#" class="text-light" style="color: darkslategrey;">Terms and Conditions</a></div>
+        </div>
+        <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>

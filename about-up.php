@@ -48,7 +48,7 @@
 
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             grid-gap: 10px;
         }
 
@@ -150,7 +150,6 @@
 
                         <div id="animation-container" class="card-img card-img-top rounded-circle"></div>
 
-
                         <script>
                             // Load the JSON animation file
                             var animation = bodymovin.loadAnimation({
@@ -163,7 +162,7 @@
                         </script>
 
                         <div class="card-body text-center">
-                            <h5 class="card-title">Yafet Abebe</h5>
+                            <h5 class="card-title"> <b>Yafet Abebe</b></h5>
                             <p class="card-text">ID: UU78211R</p>
                             <p class="card-text">Email: yafetema15@gmail.com</p>
                         </div>
@@ -177,7 +176,6 @@
 
                         <div id="animation-container-2" class="card-img card-img-top rounded-circle"></div>
 
-
                         <script>
                             // Load the JSON animation file
                             var animation = bodymovin.loadAnimation({
@@ -190,26 +188,9 @@
                         </script>
 
                         <div class="card-body text-center">
-                            <h5 class="card-title">Yafet Abebe</h5>
-                            <p class="card-text">ID: UU78211R</p>
-                            <p class="card-text">Email: yafetema15@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
+                            <h5 class="card-title">Metasebia Henok</h5>
+                            <p class="card-text">ID: UU78420R</p>
+                            <p class="card-text">Email: Metasebiahenok@yahoo.com</p>
                         </div>
                     </div>
                 </div>
@@ -218,11 +199,24 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
+
+                        <div id="animation-container-3" class="card-img card-img-top rounded-circle"></div>
+
+                        <script>
+                            // Load the JSON animation file
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animation-container-3'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: './images/profile/profile-avator-animation-2.json'
+                            });
+                        </script>
+
                         <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
+                            <h5 class="card-title">Mubarek Jemal</h5>
+                            <p class="card-text">ID: UU78215R</p>
+                            <p class="card-text">Email: mubarekjemalcsn12@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -231,11 +225,24 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
+
+                        <div id="animation-container-4" class="card-img card-img-top rounded-circle"></div>
+
+                        <script>
+                            // Load the JSON animation file
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animation-container-4'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: './images/profile/profile-avator-animation-2.json'
+                            });
+                        </script>
+
                         <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
+                            <h5 class="card-title">Anwar Jibril</h5>
+                            <p class="card-text">ID: UU81502R</p>
+                            <p class="card-text">Email: AnwarJibril@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -244,83 +251,28 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
+
+                        <div id="animation-container-5" class="card-img card-img-top rounded-circle"></div>
+
+                        <script>
+                            // Load the JSON animation file
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animation-container-5'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: './images/profile/profile-avator-animation-2.json'
+                            });
+                        </script>
+
                         <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
+                            <h5 class="card-title">Bisrat Derbe</h5>
+                            <p class="card-text">ID: UU82401R</p>
+                            <p class="card-text">Email: BisratDerbe@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card hover-zoom d-flex align-items-center justify-content-center">
-                        <img src="images/profile-placeholder.jpg" class="card-img card-img-top rounded-circle" alt="Person Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">ID: 123456</p>
-                            <p class="card-text">Email: john.doe@example.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
 
         </div>
     </div>
