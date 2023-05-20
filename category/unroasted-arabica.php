@@ -55,11 +55,17 @@ require_once '../database/database.php';
                     <img src="../images/logo.jpg" alt="Logo" style="width: 60px; height: 60px; margin-top: 40%;" class="rounded-circle float-start" />
                 </a>
                 <div style="display: flex; flex-direction: row; width: 100%; margin: auto; float: right">
-                    <input type="search" name="searchInput" placeholder="Search" id="search_input" class="form-control" style="width: 100%;">
+                    <input type="search" name="searchInput" placeholder="Search" id="search_input" class="form-control" style="width: 100%;" onclick="openSearchPage()">
                     <button class="btn btn-primary" type="submit" style="margin-top: 20px; float: left;">
                         <i class="fa-solid fa-search"></i>
                     </button>
                     </input>
+                    <script>
+                        function openSearchPage() {
+                            var inputValue = document.getElementById("search_input").value;
+                            window.location.href = "../search.php?search=" + encodeURIComponent(inputValue);
+                        }
+                    </script>
                 </div>
                 <a href="../signin.php">
                     <button class="btn btn-dark position-relative" style=" margin-left: 10px; margin-right: 10px;  margin-top: 20px; float: right;">

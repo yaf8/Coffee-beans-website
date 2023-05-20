@@ -26,7 +26,6 @@ require_once 'database/database.php';
             color: black;
             background-color: #333;
         }
-
         .nav-item:hover {
             color: whitesmoke;
         }
@@ -38,24 +37,19 @@ require_once 'database/database.php';
         a .dropdown-item .dropdown-item {
             padding: 5px;
         }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
 
-        html,
+        .card-img {
+            object-fit: cover;
+        }
         body {
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .main-content {
-            flex: 1;
-        }
-
-        .footer {
-            margin-top: auto;
-        }
+      background: linear-gradient(to bottom, #e8d2be, #6F4E37);
+      background-repeat: no-repeat;
+    }
     </style>
 </head>
 
@@ -65,7 +59,7 @@ require_once 'database/database.php';
     <header class="header">
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">
+                <a href="./" class="navbar-brand">
                     <img src="images/logo.jpg" alt="Logo" style="width: 60px; height: 60px; margin-top: 40%;" class="rounded-circle float-start" />
                 </a>
                 <form style="display: flex; flex-direction: row; width: 100%; margin: auto; float: right" id="form" class="needs-validation" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
@@ -92,7 +86,7 @@ require_once 'database/database.php';
     </header>
     <nav class="bg-opacity-50">
         <ul class="nav nav-tabs flex-row">
-            <li class="nav-item"><a href="#" class="">Home</a></li>
+            <li class="nav-item"><a href="./" class="">Home</a></li>
             <li class="navig nav-item" data-bs-toggle="dropdown">
                 <div class="dropdown">
                     <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
@@ -134,11 +128,13 @@ require_once 'database/database.php';
     </nav>
 
     <div class=" justify-content-center container-fluid mt-5 main-container" style="width: 90%">
+
+        <h3 class="fw-bold w-100 mt-3 mb-3">
+            Search <i class="fa-solid fa-solid fa-search pl-1 pr-2"></i>
+        </h3>
         <div class="card-grid card-group">
 
-            <h3 class="fw-bold w-100 mt-3">
-                Search <i class="fa-solid fa-solid fa-search pl-1 pr-2"></i>
-            </h3>
+
 
 
             <?php

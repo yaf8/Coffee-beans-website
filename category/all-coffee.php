@@ -56,11 +56,17 @@ require_once '../database/database.php';
                     <img src="../images/logo.jpg" alt="Logo" style="width: 60px; height: 60px; margin-top: 40%;" class="rounded-circle float-start" />
                 </a>
                 <div style="display: flex; flex-direction: row; width: 100%; margin: auto; float: right">
-                    <input type="search" name="searchInput" placeholder="Search" id="search_input" class="form-control" style="width: 100%;">
+                    <input type="search" name="searchInput" placeholder="Search" id="search_input" class="form-control" style="width: 100%;" onclick="openSearchPage()">
                     <button class="btn btn-primary" type="submit" style="margin-top: 20px; float: left;">
                         <i class="fa-solid fa-search"></i>
                     </button>
                     </input>
+                    <script>
+                        function openSearchPage() {
+                            var inputValue = document.getElementById("search_input").value;
+                            window.location.href = "../search.php?search=" + encodeURIComponent(inputValue);
+                        }
+                    </script>
                 </div>
                 <a href="../signin.php">
                     <button class="btn btn-dark position-relative" style=" margin-left: 10px; margin-right: 10px;  margin-top: 20px; float: right;">
@@ -119,57 +125,57 @@ require_once '../database/database.php';
         </ul>
     </nav>
 
-  <!-- Carousel wrapper -->
-  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    <!-- Carousel wrapper -->
+    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner " style="height: 20%; max-width: 70%; margin: auto; margin-top: 20px;">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <img src="../images/coffee_bean_ad_background_1.jpg" class="d-block w-100" alt="Sunset Over the City" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item ">
+                <img src="../images/coffee_beans_ad_background_2.jpg" class="d-block w-100" alt="Sunset Over the City" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+                <img src="../images/coffee_beans_ad_background_3.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-
-    <!-- Inner -->
-    <div class="carousel-inner " style="height: 20%; max-width: 70%; margin: auto; margin-top: 20px;">
-      <!-- Single item -->
-      <div class="carousel-item active">
-        <img src="../images/coffee_bean_ad_background_1.jpg" class="d-block w-100" alt="Sunset Over the City" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-
-      <!-- Single item -->
-      <div class="carousel-item ">
-        <img src="../images/coffee_beans_ad_background_2.jpg" class="d-block w-100" alt="Sunset Over the City" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img src="../images/coffee_beans_ad_background_3.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Inner -->
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Carousel wrapper -->
+    <!-- Carousel wrapper -->
 
 
 
